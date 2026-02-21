@@ -1,0 +1,37 @@
+Analyzing lyric_flow...                                         
+
+warning • Unused import: 'package:flutter/material.dart' • lib/core/navigation/app_router.dart:1:8 • unused_import
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/action_chip.dart:27:55 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/lyric_section.dart:24:66 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/option_pill.dart:39:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/option_pill.dart:41:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/record_button.dart:31:44 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/record_button.dart:51:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/soft_card.dart:23:33 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/soft_card.dart:30:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/widgets/voice_waveform.dart:26:40 • deprecated_member_use
+  error • Target of URI doesn't exist: '../domain/models/creator_settings.dart' • lib/features/creator/presentation/providers/creator_provider.dart:2:8 • uri_does_not_exist
+  error • Undefined class 'CreatorSettings' • lib/features/creator/presentation/providers/creator_provider.dart:9:3 • undefined_class
+  error • The name 'CreatorSettings' isn't a class • lib/features/creator/presentation/providers/creator_provider.dart:10:18 • creation_with_non_type
+  error • The name 'CreatorSettings' isn't a type, so it can't be used as a type argument • lib/features/creator/presentation/providers/creator_provider.g.dart:14:50 • non_type_as_type_argument
+  error • The name 'CreatorSettings' isn't a type, so it can't be used as a type argument • lib/features/creator/presentation/providers/creator_provider.g.dart:24:49 • non_type_as_type_argument
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/creator/presentation/screens/creator_mode_screen.dart:34:79 • deprecated_member_use
+  error • Target of URI doesn't exist: '../domain/models/lyric_model.dart' • lib/features/lyrics/presentation/providers/lyrics_provider.dart:2:8 • uri_does_not_exist
+  error • The name 'LyricModel' isn't a type, so it can't be used as a type argument • lib/features/lyrics/presentation/providers/lyrics_provider.dart:9:10 • non_type_as_type_argument
+  error • The name 'LyricModel' isn't a class • lib/features/lyrics/presentation/providers/lyrics_provider.dart:13:18 • creation_with_non_type
+  error • The method 'LyricSectionModel' isn't defined for the type 'LyricsNotifier' • lib/features/lyrics/presentation/providers/lyrics_provider.dart:17:9 • undefined_method
+  error • The method 'LyricSectionModel' isn't defined for the type 'LyricsNotifier' • lib/features/lyrics/presentation/providers/lyrics_provider.dart:26:9 • undefined_method
+  error • The method 'LyricSectionModel' isn't defined for the type 'LyricsNotifier' • lib/features/lyrics/presentation/providers/lyrics_provider.dart:36:9 • undefined_method
+  error • The name 'LyricModel' isn't a type, so it can't be used as a type argument • lib/features/lyrics/presentation/providers/lyrics_provider.g.dart:14:54 • non_type_as_type_argument
+  error • The name 'LyricModel' isn't a type, so it can't be used as a type argument • lib/features/lyrics/presentation/providers/lyrics_provider.g.dart:24:53 • non_type_as_type_argument
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/lyrics/presentation/screens/generated_lyrics_screen.dart:55:43 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/lyrics/presentation/screens/generated_lyrics_screen.dart:60:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/lyrics/presentation/screens/generated_lyrics_screen.dart:73:54 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/lyrics/presentation/screens/generated_lyrics_screen.dart:75:80 • deprecated_member_use
+  error • The property 'sections' can't be unconditionally accessed because the receiver can be 'null' • lib/features/lyrics/presentation/screens/generated_lyrics_screen.dart:104:41 • unchecked_use_of_nullable_value
+  error • The property 'sections' can't be unconditionally accessed because the receiver can be 'null' • lib/features/lyrics/presentation/screens/generated_lyrics_screen.dart:106:48 • unchecked_use_of_nullable_value
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/lyrics/presentation/screens/generated_lyrics_screen.dart:156:62 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/voice_capture/presentation/screens/voice_capture_screen.dart:34:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/voice_capture/presentation/screens/voice_capture_screen.dart:243:54 • deprecated_member_use
+
+33 issues found. (ran in 1.2s)
