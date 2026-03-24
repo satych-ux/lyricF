@@ -48,7 +48,7 @@ class ElevenLabsTtsService {
       },
     );
 
-    final modelId = ElevenLabsConfig.ttsModelId;
+    const modelId = ElevenLabsConfig.ttsModelId;
     final textForApi = _prepareTextForModel(trimmed, modelId);
 
     final body = <String, dynamic>{
@@ -119,7 +119,7 @@ double _resolveSpeechSpeed(String modelId) {
 
 /// [eleven_v3] interprets `[bracket]` phrases as performance cues, not spoken words.
 String _prepareTextForModel(String text, String modelId) {
-  var t = text.replaceAll(RegExp(r'\n{4,}'), '\n\n\n');
+  final t = text.replaceAll(RegExp(r'\n{4,}'), '\n\n\n');
   if (modelId != 'eleven_v3') return t;
   if (t.trimLeft().startsWith('[')) return t;
   // v3: bracket tokens are director cues, not spoken (see ElevenLabs v3 audio tags docs).

@@ -175,7 +175,7 @@ class _MasterToggle extends StatelessWidget {
           Switch.adaptive(
             value: isEnabled,
             onChanged: onChanged,
-            activeColor: AppColors.primary,
+            activeTrackColor: AppColors.primary,
           ),
         ],
       ),

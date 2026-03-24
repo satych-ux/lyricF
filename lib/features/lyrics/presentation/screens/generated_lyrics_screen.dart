@@ -165,10 +165,10 @@ class GeneratedLyricsScreen extends StatelessWidget {
                 Positioned.fill(
                   child: _buildLyricsContent(context, lyrics),
                 ),
-                Positioned.fill(
+                const Positioned.fill(
                   child: ColoredBox(
                     color: Colors.black26,
-                    child: const Center(
+                    child: Center(
                       child: CircularProgressIndicator(color: AppColors.primary),
                     ),
                   ),
