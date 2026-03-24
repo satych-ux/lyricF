@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:lyric_flow/core/widgets/wave_loader.dart';
 import '../theme/app_colors.dart';
 
 /// The central record button with a pulsing animation.
 class RecordButton extends StatelessWidget {
   final VoidCallback? onTap;
+  final bool isLoading;
   final bool isRecording;
 
   const RecordButton({
     super.key, 
     this.onTap, 
-    this.isRecording = false,
+    this.isRecording = false, 
+    this.isLoading = false,
   });
 
   @override
@@ -23,6 +26,9 @@ class RecordButton extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
+
+            if (isLoading)
+              const WaveLoader(),
             // Pulse Rings
             if (isRecording)
               Container(
@@ -41,6 +47,7 @@ class RecordButton extends StatelessWidget {
               .fadeOut(),
             
             // Main Button
+            if (!isLoading)
             Container(
               width: 64, height: 64,
               decoration: BoxDecoration(

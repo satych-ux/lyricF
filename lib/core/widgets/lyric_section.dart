@@ -18,31 +18,41 @@ class LyricSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 24),
+      margin: const EdgeInsets.only(bottom: 28),
       padding: isHighlight ? const EdgeInsets.only(left: 16) : null,
-      decoration: isHighlight ? BoxDecoration(
-        border: Border(left: BorderSide(color: AppColors.primary.withValues(alpha: 0.5), width: 3))
-      ) : null,
+      decoration: isHighlight
+          ? BoxDecoration(
+              border: Border(
+                left: BorderSide(
+                  color: AppColors.primary.withValues(alpha: 0.65),
+                  width: 3,
+                ),
+              ),
+            )
+          : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             title,
-            style: const TextStyle(
+            style: GoogleFonts.beVietnamPro(
               color: AppColors.primary,
-              fontSize: 12,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
+              fontSize: 11,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 1.6,
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 10),
           ...lines.map((line) => Padding(
-            padding: const EdgeInsets.only(bottom: 4),
+            padding: const EdgeInsets.only(bottom: 6),
             child: Text(
               line,
               style: GoogleFonts.newsreader(
-                fontSize: isHighlight ? 22 : 20,
-                height: 1.4,
+                fontSize: isHighlight ? 21 : 19,
+                height: 1.45,
+                color: Theme.of(context).brightness == Brightness.dark
+                    ? const Color(0xFFF8F5E6)
+                    : AppColors.textMainLight,
                 fontWeight: isHighlight ? FontWeight.w600 : FontWeight.w500,
                 fontStyle: isHighlight ? FontStyle.italic : FontStyle.normal,
               ),

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1001424298620",
+    "project_id": "lyricflow-33f2e",
+    "storage_bucket": "lyricflow-33f2e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001424298620:android:7981ff44641311b8c3dff9",
+        "android_client_info": {
+          "package_name": "com.example.lyric_flow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001424298620-74nhq75hdufdrht5d5eq70e4vpbab9lg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lyric_flow",
+            "certificate_hash": "fd277a2b9f484ea7fc175f0e0645594dd3c9af01"
+          }
+        },
+        {
+          "client_id": "1001424298620-jdmu9p6kgiq8cc04978uuof28upr1vim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsk3UBsVT9TNUgYTRhQeeXlkQz3CC41OM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001424298620-jdmu9p6kgiq8cc04978uuof28upr1vim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

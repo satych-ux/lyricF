@@ -43,3 +43,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local ElevenLabs secrets (copy from tool/elevenlabs.dartdefines.json.example)
+tool/elevenlabs.dartdefines.json
+tool/elevenlabs.dartdefines.json.example
