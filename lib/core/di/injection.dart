@@ -1,4 +1,5 @@
 import 'package:get_it/get_it.dart';
+import 'package:flutter/services.dart';
 import 'package:lyric_flow/core/network/dio_client.dart';
 import 'package:lyric_flow/features/lyrics/domain/repositories/lyrics_repository.dart';
 import 'package:lyric_flow/features/lyrics/domain/repositories/voice_repository.dart';
@@ -27,9 +28,17 @@ import 'package:lyric_flow/core/services/elevenlabs_tts_service.dart';
 final sl = GetIt.instance;
 
 Future<void> init() async {
-  await GoogleSignIn.instance.initialize(
-    serverClientId: kGoogleSignInServerClientId,
-  );
+  // In widget/unit tests, Google Sign-In platform channels are often unavailable.
+  // Skip initialization there so DI can still bootstrap for smoke tests.
+  try {
+    await GoogleSignIn.instance.initialize(
+      serverClientId: kGoogleSignInServerClientId,
+    );
+  } on MissingPluginException {
+    // No-op: plugin not registered in current runtime (e.g. flutter test).
+  } on UnimplementedError {
+    // No-op: placeholder GoogleSignIn implementation in test runtime.
+  }
 
   // Features - Lyrics
   // Bloc
